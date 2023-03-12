@@ -1,0 +1,78 @@
+
+.main__amenities
+    position: relative
+    background-color: $b
+    min-height: 100vh
+    overflow: hidden
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+
+    .main__bg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: $b
+        mix-blend-mode: multiply
+
+    .main__bg:before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) rotate(160deg)
+        width: 70vw
+        height: 50vh
+        background-color: $w
+        border-radius: 100%
+        filter: blur(150px)
+        mix-blend-mode: screen
+
+#main__amenities_anim
+    position: absolute
+    top: -20%
+    left: 0
+
+.main__amenities_body
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.main__amenities_title
+    h3
+        font-size: 30px
+        line-height: 160%
+        text-transform: uppercase
+        +mreg
+
+.main__amenities_img
+    display: flex
+    flex-direction: column
+    span
+        font-size: 16px
+        padding-bottom: 30px
+        text-transform: uppercase
+        +mreg
+
+.main__amenities_img:nth-of-type(1)
+    position: absolute
+    right: 10%
+    top: 15%
+    will-change: transform
+    img
+        width: 100%
+
+.main__amenities_img:nth-of-type(2)
+    position: absolute
+    right: 40%
+    bottom: 30%
+    will-change: transform
+
+.main__amenities_img:nth-of-type(3)
+    position: absolute
+    right: 12%
+    bottom: 10%
+    will-change: transform

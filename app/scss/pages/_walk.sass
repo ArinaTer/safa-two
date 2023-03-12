@@ -1,0 +1,45 @@
+.main__walk
+    position: relative
+    background-color: $b
+    min-height: 100vh
+    overflow: hidden
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+
+.main__walk_body
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+.main__walk_title
+    h3
+        font-size: 30px
+        text-transform: uppercase
+        +mreg
+
+.main__walk_btn
+    font-size: 18px
+    text-transform: uppercase
+    padding: 10px 100px
+    background: linear-gradient(91.51deg, #E50197 0.19%, #470AA2 102.64%)
+    margin-top: 60px
+    color: $w
+    +mreg
+
+#main__walk_anim
+    position: absolute
+    left: 0
+    top: -20%
+    flex-basis: 30%
+    max-width: 30%
+    +r(1440)
+        flex-basis: 40%
+        max-width: 40%
+    +r(1370)
+        flex-basis: 50%
+        max-width: 50%
+    +rrh(1025,1370)
+        flex-basis: 50%
+        max-width: 50%

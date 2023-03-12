@@ -1,0 +1,269 @@
+.main__about
+    position: relative
+    background-color: $b
+    overflow: hidden
+    min-height: 200vh
+    +r(992)
+        min-height: auto
+
+.main__about_bg
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    min-height: 100vh
+    z-index: 2
+    +r(992)
+        background-image: none !important
+
+.main__about_body
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 100vh
+
+.main__about_headline
+    z-index: 2
+    +r(992)
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        min-height: 100vh
+        padding: 80px 0
+    +r(768)
+        min-height: 120vh
+
+.main__about_headline_bg:before
+    content: ""
+    background-image: url("../img/main-about-bg-color.png")
+    background-repeat: no-repeat
+    background-position: center center
+    width: 60%
+    height: 50%
+    position: absolute
+    left: -10%
+    top: 5%
+    +rrh(650,1600)
+        height: 60%
+    +rrh(770,1025)
+        width: 80%
+    +r(992)
+        width: 100%
+        height: 100%
+        top: -40%
+        background-size: contain
+    +r(768)
+        left: -5%
+
+
+.main__about_title
+    h2
+        font-size: 80px
+        text-transform: uppercase
+        color: #FFFFFF
+        +mreg
+        +r(1370)
+            font-size: 65px
+
+.main__about_container
+    min-height: 100vh
+
+.main__about_info__text
+    font-size: 16px
+    line-height: 155%
+    flex-basis: 40%
+    max-width: 40%
+    padding: 150px 0 40px
+    +glight
+    +rrh(650,1600)
+        padding: 30px 0
+    +r(1370)
+        font-size: 14px
+    +rrh(770,1025)
+        padding: 50px 0
+    +rrh(770,1025)
+        font-size: 13px
+    +r(992)
+        padding: 20px 0
+        flex-basis: 100%
+        max-width: 100%
+        font-size: 16px
+
+#main__about_headline_anim
+    position: absolute
+    top: -20%
+    left: -10%
+    flex-basis: 50%
+    max-width: 50%
+    +rrh(770,1025)
+        top: -25%
+    +r(992)
+        flex-basis: 100%
+        max-width: 100%
+        top: -40%
+
+.main__about_btn
+    font-size: 18px
+    text-transform: uppercase
+    color: #FFFFFF
+    padding: 10px 100px
+    background: linear-gradient(93.66deg, #E40037 12.57%, #7A003B 89.01%)
+    +mreg
+    +r(992)
+        width: 100%
+
+.main__about_img__item:nth-of-type(1)
+    position: absolute
+    right: 15%
+    top: 15%
+    will-change: transform
+    +r(1440)
+        right: 18%
+    +rrh(650,1600)
+        right: 17%
+    +rrh(770,1025)
+        top: 25%
+        right: 15%
+    +r(992)
+        top: 20%
+        left: 0
+    img
+        +rrh(650,1600)
+            width: 80%
+        +rrh(770,1025)
+            width: 70%
+        +r(992)
+            width: 60%
+
+.main__about_img__item:nth-of-type(2)
+    position: absolute
+    right: -15%
+    top: 40%
+    will-change: transform
+    +rrh(650,1600)
+        right: -8%
+    +r(1440)
+        right: -4%
+    +r(1370)
+        right: -13%
+    +rrh(770,1025)
+        right: -20%
+    +r(992)
+        top: 30%
+        right: -30%
+    img
+        +rrh(650,1600)
+            width: 80%
+        +rrh(770,1025)
+            width: 70%
+        +r(992)
+            width: 70%
+
+.main__about_img__item:nth-of-type(3)
+    position: absolute
+    right: 25%
+    top: 45%
+    will-change: transform
+    +rrh(650,1600)
+        top: 40%
+    +r(1440)
+        right: 30%
+    +r(1370)
+        right: 25%
+    +rrh(770,1025)
+        right: 20%
+    +r(992)
+        left: 15%
+        top: 35%
+    img
+        +rrh(650,1600)
+            width: 80%
+        +rrh(770,1025)
+            width: 70%
+        +r(992)
+            width: 65%
+
+.main__about_forms__anim
+    position: relative
+
+.main__about_forms
+    flex-basis: 45%
+    max-width: 45%
+    width: 100%
+    padding: 30px
+    position: absolute
+    top: -600px
+    +r(1440)
+        top: -600px
+    +rrh(650,1600)
+        top: -420px
+    +r(1370)
+        top: -450px
+    +rrh(1025,1370)
+        top: -600px
+    +rrh(770,1025)
+        flex-basis: 50%
+        max-width: 50%
+        top: -520px
+        left: 5%
+    +r(992)
+        position: initial
+        flex-basis: 100%
+        max-width: 100%
+        margin-bottom: 50px
+    &::before
+        content: ""
+        z-index: -1
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: linear-gradient(180deg, #000000 0%, #A20027 100%)
+        transform: translate3d(0px, 0, 0) scale(1.1)
+        filter: blur(15px)
+        opacity: .9
+        transition: opacity 0.3s
+        border-radius: inherit
+
+.main__aboutr__forms_title
+    font-size: 35px
+    text-align: center
+    text-transform: uppercase
+    color: $w
+    padding-bottom: 50px
+    +mreg
+    +rrh(650,1600)
+        padding-bottom: 20px
+        font-size: 30px
+    +rrh(770,1025)
+        padding-bottom: 15px
+
+.main__aboutr__input
+    .form-control
+        background-color: transparent
+        border: none
+        padding: 15px
+        border-bottom: 1px solid $w
+        border-radius: 0
+        font-size: 14px
+        color: $w
+        +glight
+        +rrh(650,1600)
+            padding: 10px
+        &:focus
+            background-color: transparent
+            color: $w
+        &::placeholder
+            font-size: 14px
+            line-height: 17px
+            color: $w
+            +glight
+
+.main__aboutr__btn
+    font-size: 18px
+    text-transform: uppercase
+    color: #FFFFFF
+    background-color: $col-proj
+    padding: 10px 0
+    width: 100%
+    +mreg

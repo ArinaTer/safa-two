@@ -1,0 +1,271 @@
+.interior-modal
+    .modal-dialog
+        max-width: 100% !important
+        min-height: auto !important
+        margin: 0 !important
+    .modal-content
+        border-radius: 0 !important
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+
+.all__modal-modal
+    .modal-dialog
+        max-width: 100% !important
+        min-height: auto !important
+        margin: 0 !important
+    .modal-content
+        border-radius: 0 !important
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        min-height: 100vh
+
+.interior__title
+    h3
+        font-size: 50px
+        text-transform: uppercase
+        color: $w
+        +mreg
+        padding: 60px 0
+
+.interior__gallery
+    display: flex
+    justify-content: space-between
+
+.interior__gallery_video
+    position: relative
+
+#interior__gallery_play
+    position: absolute
+    top: 35%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.interior__gallery_img__title
+    font-size: 16px
+    text-transform: uppercase
+    color: $w
+    padding-bottom: 20px
+    +mreg
+
+.interior__forms
+    flex-basis: 45%
+    max-width: 45%
+    position: relative
+    padding: 30px
+    margin-bottom: 50px
+    &::before
+        content: ""
+        z-index: -1
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: linear-gradient(142.54deg, rgba(228, 0, 55, 0.5) 24.86%, rgba(123, 1, 23, 0.5) 78.27%)
+        transform: translate3d(0px, 0, 0) scale(1.1)
+        filter: blur(15px)
+        transition: opacity 0.3s
+        border-radius: inherit
+
+.interior__forms_title
+    font-size: 35px
+    line-height: 160%
+    text-align: center
+    text-transform: uppercase
+    color: $w
+    +mreg
+
+.interior__input
+    .form-control
+        background-color: transparent
+        border: none
+        padding: 15px
+        border-bottom: 1px solid $w
+        border-radius: 0
+        font-size: 14px
+        color: $w
+        +greg
+        &::placeholder
+            font-size: 14px
+            line-height: 17px
+            color: $w
+            +greg
+        &:focus
+            background-color: transparent
+
+.interior__btn
+    font-size: 18px
+    text-transform: uppercase
+    color: #FFFFFF
+    margin-top: 20px
+    background: linear-gradient(91.6deg, #E40037 -1.69%, #7B0117 97.7%)
+    padding: 10px
+    width: 100%
+    +mreg
+
+.interior__close-btn
+    display: flex
+    justify-content: flex-end
+    padding: 30px
+
+.all__modal__close-btn
+    display: flex
+    justify-content: flex-end
+    padding: 30px
+
+.forest-modal
+    .all__modal__forms
+        flex-basis: 45%
+        max-width: 45%
+        position: relative
+        padding: 40px
+        margin-bottom: 50px
+        &::before
+            content: ""
+            z-index: -1
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background: linear-gradient(180deg, #000000 0%, #A82866 100%)
+            filter: blur(15px)
+            transition: opacity 0.3s
+            border-radius: inherit
+
+    .all__modal__btn
+        font-size: 18px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 20px
+        background: linear-gradient(91.51deg, #B20055 0.19%, #F73E82 102.64%)
+        padding: 10px
+        width: 100%
+        +mreg
+
+.all__modal__forms_title
+    font-size: 30px
+    letter-spacing: 0.02em
+    text-align: center
+    padding: 30px 0
+    text-transform: uppercase
+
+.all__modal__input
+    .form-control
+        background-color: transparent
+        border: none
+        padding: 15px
+        border-bottom: 1px solid $w
+        border-radius: 0
+        font-size: 14px
+        color: $w
+        +greg
+        &::placeholder
+            font-size: 14px
+            line-height: 17px
+            color: $w
+            +greg
+        &:focus
+            background-color: transparent
+
+.all__modal__body
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.wall-modal
+    .all__modal__forms
+        flex-basis: 45%
+        max-width: 45%
+        position: relative
+        padding: 40px
+        margin-bottom: 50px
+        &::before
+            content: ""
+            z-index: -1
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background: linear-gradient(180deg, #000000 0%, #3D0976 100%)
+            filter: blur(15px)
+            transition: opacity 0.3s
+            border-radius: inherit
+
+    .all__modal__btn
+        font-size: 18px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 20px
+        background: linear-gradient(91.51deg, #E50197 0.19%, #470AA2 102.64%)
+        padding: 10px
+        width: 100%
+        +mreg
+
+.glass-modal
+    .all__modal__forms
+        flex-basis: 45%
+        max-width: 45%
+        position: relative
+        padding: 40px
+        margin-bottom: 50px
+        &::before
+            content: ""
+            z-index: -1
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background: linear-gradient(156.57deg, #000000 15.12%, #1230C8 111.73%)
+            filter: blur(15px)
+            transition: opacity 0.3s
+            border-radius: inherit
+
+    .all__modal__btn
+        font-size: 18px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 20px
+        background: linear-gradient(91.51deg, #4F0AA2 0.19%, #0148FF 102.64%)
+        padding: 10px
+        width: 100%
+        +mreg
+
+.floor-modal
+    .modal-content
+        background-color: $b
+        background-repeat: no-repeat
+        background-position: 650px center
+        background-size: contain
+    .all__modal__forms
+        flex-basis: 45%
+        max-width: 45%
+        position: relative
+        padding: 40px
+        margin-bottom: 50px
+        &::before
+            content: ""
+            z-index: -1
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background: linear-gradient(161.5deg, #000000 12.54%, #0182CD 96.9%)
+            filter: blur(15px)
+            transition: opacity 0.3s
+            border-radius: inherit
+
+    .all__modal__btn
+        font-size: 18px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 20px
+        background: linear-gradient(91.3deg, #016CFD -3.78%, #01BAD0 104.52%)
+        padding: 10px
+        width: 100%
+        +mreg

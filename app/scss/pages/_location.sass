@@ -1,0 +1,117 @@
+.main__location
+    position: relative
+    background-color: $b
+    min-height: 100vh
+    overflow: hidden
+
+.main__location_body
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    +r(1370)
+        top: 40%
+    +r(992)
+        top: 50%
+
+.main__location_headline_bg
+    display: none
+    +r(576)
+        display: block
+    &:before
+        content: ""
+        background-image: url(../img/main-about-bg-color.png)
+        background-repeat: no-repeat
+        background-position: 1% center
+        background-size: 90%
+        opacity: .5
+        width: 100%
+        height: 40%
+        position: absolute
+        left: -10%
+        top: -9%
+        z-index: 1
+
+#main__location_anim
+    position: absolute
+    top: 0
+    z-index: 1
+
+.main__location_map
+    position: relative
+    +rrh(695,1440)
+        height: 780px
+    +r(1370)
+        height: 100%
+
+.main__location_title
+    position: absolute
+    top: 250px
+    left: 0
+    transform: translate(0%, -50%)
+    +rrh(695,1440)
+        top: 180px
+    +r(1370)
+        top: 140px
+
+    h2
+        font-size: 80px
+        text-transform: uppercase
+        color: #FFFFFF
+        +mreg
+        +r(1370)
+            font-size: 65px
+
+.main__location_map__text
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    span:first-child
+        font-size: 22px
+        line-height: 19px
+        text-align: center
+        fill: $w
+        padding-bottom: 20px
+        +glight
+        +rrh(695,1440)
+            padding-bottom: 10px
+            font-size: 20px
+
+    span:last-child
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        fill: $w
+        padding-bottom: 10px
+        +glight
+        +rrh(695,1440)
+            font-size: 16px
+
+.main__location_map__text:nth-of-type(1)
+    position: absolute
+    top: 62%
+    left: 22%
+    transform: translate(-50%, -50%)
+    +rrh(695,1440)
+        left: 30%
+
+.main__location_map__text:nth-of-type(2)
+    position: absolute
+    top: 45%
+    left: 48%
+    transform: translate(-50%, -50%)
+
+.main__location_map__text:nth-of-type(3)
+    position: absolute
+    top: 42%
+    left: 66%
+    transform: translate(-50%, -50%)
+    +rrh(695,1440)
+        left: 62%
+    +r(992)
+        top: 60%
+
+#location__anim, #location__markers, #location__anim-1
+    opacity: 0

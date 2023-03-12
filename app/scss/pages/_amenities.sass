@@ -1,0 +1,128 @@
+
+.main__amenities
+    position: relative
+    background-color: $b
+    min-height: 100vh
+    overflow: hidden
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    +r(992)
+        background-image: none !important
+        min-height: auto
+
+#main__amenities_anim
+    position: absolute
+    top: -20%
+    left: 0
+    flex-basis: 30%
+    max-width: 30%
+    +r(992)
+        left: initial
+        right: -5%
+        top: -40%
+        flex-basis: 50%
+        max-width: 50%
+        transform: rotate(180deg)
+
+.main__amenities_body
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    +r(992)
+        justify-content: flex-start
+
+.main__amenities_title
+    h3
+        font-size: 30px
+        line-height: 160%
+        text-transform: uppercase
+        +mreg
+        +r(992)
+            padding-top: 50px
+
+.main__amenities_img
+    display: flex
+    flex-direction: column
+    span
+        font-size: 16px
+        padding-bottom: 30px
+        text-transform: uppercase
+        +mreg
+        +rrh(650,1600)
+            padding-bottom: 15px
+
+.main__amenities_img:nth-of-type(1)
+    position: absolute
+    right: 10%
+    top: 15%
+    will-change: transform
+    +r(1440)
+        top: 10%
+        right: 5%
+    +rrh(650,1600)
+        right: 0%
+        top: 5%
+    +rrh(820,1185)
+        top: 15%
+        right: -2%
+    +r(992)
+        top: 18%
+        right: initital
+        left: 5%
+    img
+        +rrh(650,1600)
+            width: 80%
+        +rrh(820,1185)
+            width: 80%
+        +r(992)
+            width: 75%
+
+.main__amenities_img:nth-of-type(2)
+    position: absolute
+    right: 40%
+    bottom: 30%
+    will-change: transform
+    +r(1440)
+        right: 42%
+    +rrh(650,1600)
+        right: 35%
+    +rrh(820,1185)
+        right: 33%
+    +r(992)
+        right: 5%
+    img
+        +rrh(650,1600)
+            width: 80%
+        +rrh(820,1185)
+            width: 80%
+        +r(992)
+            width: 100%
+
+.main__amenities_img:nth-of-type(3)
+    position: absolute
+    right: 12%
+    bottom: 10%
+    will-change: transform
+    +rrh(650,1600)
+        right: 10%
+        bottom: 5%
+    +r(1370)
+        right: 5%
+        bottom: 10%
+    +rrh(820,1185)
+        right: 0
+        bottom: 15%
+    +rrh(770,1025)
+        bottom: 13%
+    +r(992)
+        right: initial
+        left: 5%
+    img
+        +rrh(650,1600)
+            width: 80%
+        +rrh(820,1185)
+            width: 80%
+        +r(992)
+            width: 100%

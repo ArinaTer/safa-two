@@ -1,0 +1,143 @@
+.main__floorplans
+    position: relative
+    background-color: $b
+    min-height: 100vh
+    overflow: hidden
+    background-repeat: no-repeat
+    background-position: 80% center
+    background-size: contain
+    +r(1440)
+        background-position: 100% center
+    +r(1370)
+        background-position: 130% center
+    +r(992)
+        background-position: center 60%
+
+    #main__floorplans_anim
+        position: absolute
+        left: 0
+        top: -15%
+        flex-basis: 30%
+        max-width: 30%
+        +rrh(650,1600)
+            top: -35%
+        +r(1440)
+            flex-basis: 40%
+            max-width: 40%
+        +r(1370)
+            flex-basis: 50%
+            max-width: 50%
+        +rrh(1025,1370)
+            flex-basis: 50%
+            max-width: 50%
+        +r(992)
+            top: -40%
+
+    .forSwiper
+        flex-basis: 60%
+        max-width: 60%
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        position: absolute
+        top: 50%
+        right: 0
+        width: 100%
+        z-index: 10
+        transform: translate(0, -50%)
+        +r(1440)
+            flex-basis: 50%
+            max-width: 50%
+            right: 10%
+        +r(1370)
+            right: 5%
+            flex-basis: 52%
+            max-width: 52%
+        +r(1180)
+            right: 0
+            flex-basis: 57%
+            max-width: 57%
+        +r(1024)
+            right: 5%
+        +r(992)
+            flex-basis: 100%
+            max-width: 100%
+            justify-content: space-between
+            right: 0%
+            top: 60%
+
+
+.main__floorplans_body
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    +r(992)
+        justify-content: space-around
+
+    .swiper
+        width: 100%
+
+.main__floorplans_title
+    h3
+        font-size: 30px
+        text-transform: uppercase
+        +mreg
+
+.main__floorplans_slide__body
+    display: flex
+    padding-top: 60px
+    justify-content: space-between
+    align-items: center
+    +rrh(650,1600)
+        padding-top: 0
+    +r(992)
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 0
+
+.main__floorplans__list
+    flex-basis: 30%
+    max-width: 30%
+    +r(992)
+        padding-bottom: 30px
+        flex-basis: 50%
+        max-width: 50%
+    ul
+        display: flex
+        justify-content: space-between
+        padding: 0
+        grid-gap: 60px
+    .name
+        font-size: 16px
+        display: block
+        line-height: 30px
+        +greg
+    .number
+        font-size: 25px
+        line-height: 30px
+        +gsembol
+
+.main__floorplans__img
+    flex-basis: 45%
+    max-width: 45%
+    +r(1440)
+        flex-basis: 50%
+        max-width: 50%
+    +r(1024)
+        flex-basis: 55%
+        max-width: 55%
+
+.main__floorplanst__btn
+    flex-basis: 30%
+    max-width: 30%
+    font-size: 18px
+    text-transform: uppercase
+    color: $w
+    padding: 10px 0
+    background: linear-gradient(91.51deg, #0167FF 0.19%, #00C0CC 102.64%)
+    +mreg
+    +r(992)
+        flex-basis: 100%
+        max-width: 100%
